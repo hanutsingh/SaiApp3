@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.saiapp3.MainActivity">
+
+
+    <EditText
+        android:id="@+id/idName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/idSurname"
+        android:layout_alignParentStart="true"
+        android:hint="NAME"
+        android:layout_marginBottom="26dp" />
+
+    <EditText
+        android:id="@+id/idSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/idMarks"
+        android:hint="SURNAME"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/idMarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/idBtn"
+        android:hint="MARKS"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/idBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/idBtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="DELETE" />
+
+    <EditText
+        android:id="@+id/idID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idBtn2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter ID to delete " />
+
+    <Button
+        android:id="@+id/idBtn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idID"
+        android:layout_marginTop="5dp"
+        android:text="Show/Read Data" />
+
+    <TextView
+        android:id="@+id/idResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="5dp"
+        android:hint="TextView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idBtn3"
+        android:text="Broadcast Intent"
+        android:onClick="broadcastIntent"/>
+
+</RelativeLayout>
